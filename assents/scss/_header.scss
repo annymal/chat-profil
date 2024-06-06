@@ -1,0 +1,24 @@
+.page-header {
+    padding: 26px 0;
+    background-color:rgba(245, 245, 245, 1);
+    display: flex;
+    justify-content: space-between;
+    .header__menu {
+        display: flex;
+    }
+    .header__item {
+        margin-right: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        
+        span {
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+    .header__item:nth-child(3) {
+        margin-right: 12px;
+    }
+}

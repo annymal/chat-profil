@@ -1,0 +1,14 @@
+
+.page-footer {
+    background-color: var(----border-color);
+    position: fixed;
+    bottom: 0;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+
+    a {
+        color: var(--text-color);
+    }
+}
