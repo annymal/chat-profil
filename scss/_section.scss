@@ -19,6 +19,7 @@
 }
 .section__info {
   display: flex;
+  align-items: center;
   gap: 10px;
 
   .section__info-name {
@@ -32,7 +33,7 @@
   }
 }
 .section__content {
-  background-color: rgba(235, 235, 235, 1);
+  background-color: var(--bg-color);
   border-radius: 20px;
 
   .section__content-chat {
@@ -41,6 +42,11 @@
     justify-content: center;
     gap: 20px;
     align-items: center;
+    padding-top: 50px;
+
+    img {
+      max-width: 190px;
+    }
 
     span {
       font-weight: 500;
@@ -49,27 +55,11 @@
       max-width: 470px;
     }
   }
-  .textarea__block {
-    width: 100%;
-    border-radius: 20px;
-    background-color: var(--secondary-color);
-    border: 2px solid var(----border-color);
+  .input-container {
+      display: flex;
+      gap: 12px;
   }
-  textarea {
-    padding: 26px 20px;
-    border: none;
-  }
-  textarea::placeholder {
-    font-size: 15px;
-    color: var(--text-color);
-  }
-  textarea:focus {
-    outline: none;
-  }
-  .textarea__btn {
-    display: flex;
-    justify-content: space-between;
-  }
+  
   .file-upload-label {
     cursor: pointer;
     margin-right: 1rem;
@@ -82,5 +72,28 @@
 
   .file-upload-input {
     display: none;
+  }
+}
+@media (max-width: 900px) {
+  .block {
+    margin: 40px;
+  }
+  @media (max-width: 500px) {
+    .section__header {
+      flex-direction: column;
+      align-items: start;
+      padding: 0 20px;
+    }
+    .block {
+      margin: 0;
+      padding: 28px 0 0;
+    }
+    .section__content {
+      .section__content-chat{
+        span {
+          max-width: 300px;
+        }
+      } 
+    }
   }
 }

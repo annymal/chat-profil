@@ -5,8 +5,27 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 .btn-container {
     display: flex;
     gap: 12px;
+}
+.lang-active {
+    color: var(--third-color);
+}
+.btn-send {
+    display: flex;
+    flex-direction: column;
+}
+.enter {
+    font-size: 10px;
+}
+@media (max-width: 500px) {
+    .btn-container {
+        flex-direction: column;
+        margin-top: 40px;
+    }
 }
