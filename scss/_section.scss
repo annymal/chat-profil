@@ -44,6 +44,7 @@
     align-items: center;
     padding-top: 50px;
 
+
     img {
       max-width: 190px;
     }
@@ -73,11 +74,21 @@
   .file-upload-input {
     display: none;
   }
+  .message {
+    background-color: white;
+    padding: 16px 22px;
+    border-radius: 12px;
+    max-width: 500px;
+  }
 }
+
+
 @media (max-width: 900px) {
   .block {
     margin: 40px;
   }
+
+
   @media (max-width: 500px) {
     .section__header {
       flex-direction: column;
@@ -87,6 +98,7 @@
     .block {
       margin: 0;
       padding: 28px 0 0;
+      border-radius: 0;
     }
     .section__content {
       .section__content-chat{

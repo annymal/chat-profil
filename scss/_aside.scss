@@ -20,7 +20,12 @@
     display: flex;
     align-items: center;
   }
-}
+   .page-aside {
+      margin: 40px;
+    }
+  }
+
+
 @media (max-width: 500px) {
   .page-aside {
     display: none;

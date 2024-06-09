@@ -48,6 +48,7 @@
     }
     .page-header {
         flex-direction: column;
+        background-color: var(--secondary-color);
         .header__ul {
             flex-direction: column;
             margin-top: 20px;
