@@ -37,12 +37,15 @@
   border-radius: 20px;
 
   .section__content-chat {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
     align-items: center;
     padding-top: 50px;
+    max-height: 400px;
+    overflow-y: auto;
 
 
     img {
@@ -79,6 +82,8 @@
     padding: 16px 22px;
     border-radius: 12px;
     max-width: 500px;
+    word-wrap: break-word;
+    white-space: normal;
   }
 }
 

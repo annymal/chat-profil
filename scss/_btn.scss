@@ -12,6 +12,8 @@
 .btn-container {
     display: flex;
     gap: 12px;
+    position: absolute;
+    bottom: 0;
 }
 .lang-active {
     color: var(--third-color);
@@ -22,6 +24,9 @@
 }
 .enter {
     font-size: 10px;
+}
+.disabled {
+    background-color: rgb(235 108 207);
 }
 @media (max-width: 500px) {
     .btn-container {

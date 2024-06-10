@@ -3,30 +3,30 @@ import { getMessage, sendMessage } from "./api"
 const textarea = document.getElementById('textarea')
 const btn =  document.getElementById('btn-send')
 
- btn.addEventListener('click', async() => {
-    const {value} = textarea
-    try {
-        const response = await sendMessage({value})
-        await getMessage()
-
-     }
-     catch(error) {
-        console.error('Ошибка при отправке сообщения', error)
-     }
- })
- 
+ btn.addEventListener('click', handleKeyPress)
+    
  textarea.addEventListener('keydown', handleKeyPress)
 
  async function handleKeyPress(event) {
     const {value} = textarea
-    if (event.key === 'Enter') {
+    if (event.type == 'click' || event.key === 'Enter') {
+      event.preventDefault();
+      if (textarea.value.trim() === '') {
+         btn.classList.add('disabled')
+         return
+      }
+      btn.classList.remove('disabled')
         try {
-            const response = await sendMessage({value})
+            await sendMessage({value})
             await getMessage()
-    
+            textarea.value = ''
+         
          }
          catch(error) {
             console.error('Ошибка при отправке сообщения', error)
          }
     }
  }
+
+
+

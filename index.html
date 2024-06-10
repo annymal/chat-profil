@@ -78,23 +78,25 @@
             </div>
           </div>
           <div class="section__content">
+            <div>
             <div class="section__content-chat">
               <img src="images/svg/callgirl.svg" alt="girl" />
               <span
                 >Это чат с администратором. Ты можешь с ним пообщаться по любому
                 вопросу о нашем сервисе и узнать о ходе работы</span
               >
-              <p class="message" id="text"></p>
               <div class="btn-container">
                 <button class="btn bg-pink">Заказать медиаплан</button>
                 <button class="btn bg-blue">Заказать отчет</button>
               </div>
+            </div>
               <div class="textarea__block">
                 <textarea
                   placeholder="Введите сообщение для администратора"
                   name=""
                   id="textarea"
                 >
+          
                 </textarea>
                 <div class="textarea__btn">
                   <div class="input-container">
@@ -125,9 +127,8 @@
                     />
                   </div>
                   <div class="btn-send">
-                  <button id="btn-send">
+                  <button onclick="sendtext()" class="bg-pink icon-send" type="submit" id="btn-send">
                     <img
-                      class="bg-pink icon-send"
                       src="images/svg/send.svg"
                       alt="send"
                     />
