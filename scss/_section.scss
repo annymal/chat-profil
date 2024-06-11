@@ -47,7 +47,6 @@
     max-height: 400px;
     overflow-y: auto;
 
-
     img {
       max-width: 190px;
     }
@@ -60,10 +59,10 @@
     }
   }
   .input-container {
-      display: flex;
-      gap: 12px;
+    display: flex;
+    gap: 12px;
   }
-  
+
   .file-upload-label {
     cursor: pointer;
     margin-right: 1rem;
@@ -87,12 +86,10 @@
   }
 }
 
-
 @media (max-width: 900px) {
   .block {
     margin: 40px;
   }
-
 
   @media (max-width: 500px) {
     .section__header {
@@ -100,17 +97,21 @@
       align-items: start;
       padding: 0 20px;
     }
+    .section__info {
+      width: 100%;
+      justify-content: space-between;
+    }
     .block {
       margin: 0;
       padding: 28px 0 0;
       border-radius: 0;
     }
     .section__content {
-      .section__content-chat{
+      .section__content-chat {
         span {
           max-width: 300px;
         }
-      } 
+      }
     }
   }
 }

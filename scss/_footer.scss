@@ -1,8 +1,6 @@
 .page-footer {
   background-color: var(--bg-color);
   padding: 30px 0;
-  position: fixed;
-  bottom: 0;
   width: 100%;
 
   a {
@@ -28,10 +26,7 @@
   align-items: center;
   gap: 12px;
 }
-@media (max-width: 900px) {
-  .page-footer {
-    position: relative;
-  }
+@media (max-width: 1000px) {
   .footer__menu {
     gap: 30px;
   }

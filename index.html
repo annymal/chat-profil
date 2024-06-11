@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="/scss/main.scss" />
   </head>
   <body>
-    <div id="app">
-
+    <div class="app" id="app">
       <header class="page-header container">
-        <div>
+        <div class="header__logo">
           <img src="images/logo.png" alt="logo" />
         </div>
         <div class="header__menu">
@@ -24,32 +23,25 @@
               <span class="header__item-text">5%</span>
             </li>
             <li class="header__item">
-              <img
-                class="bg-pink icon"
-                src="images/svg/user.svg"
-                alt="user"
-              />
+              <img class="bg-pink icon" src="images/svg/user.svg" alt="user" />
               <span class="header__item-text">Username@adaurum.ru</span>
             </li>
           </ul>
-              <button>
-                <img
-                  class="bg-white icon"
-                  src="images/svg/settings.svg"
-                  alt="settings"
-                />
-              </button>
-           
-            
-              <button>
-                <img
-                  class="bg-white icon"
-                  src="images/svg/logout.svg"
-                  alt="logout"
-                />
-              </button>
-           
-          
+          <button>
+            <img
+              class="bg-white icon"
+              src="images/svg/settings.svg"
+              alt="settings"
+            />
+          </button>
+
+          <button>
+            <img
+              class="bg-white icon"
+              src="images/svg/logout.svg"
+              alt="logout"
+            />
+          </button>
         </div>
       </header>
 
@@ -57,11 +49,14 @@
         <aside class="page-aside">
           <h2 class="title">Файлы</h2>
           <div class="aside__item">
-            <img class="aside__img" src="images/svg/files-group.svg" alt="files" />
-            <p class="aside__text"
-              >Закажи у личного помощника медиаплан. Он появится в этом
-              разделе</p
-            >
+            <img
+              class="aside__img"
+              src="images/svg/files-group.svg"
+              alt="files"
+            />
+            <p class="aside__text">
+              Закажи у личного помощника медиаплан. Он появится в этом разделе
+            </p>
           </div>
         </aside>
         <section class="block">
@@ -79,24 +74,23 @@
           </div>
           <div class="section__content">
             <div>
-            <div class="section__content-chat">
-              <img src="images/svg/callgirl.svg" alt="girl" />
-              <span
-                >Это чат с администратором. Ты можешь с ним пообщаться по любому
-                вопросу о нашем сервисе и узнать о ходе работы</span
-              >
+              <div class="section__content-chat">
+                <img src="images/svg/callgirl.svg" alt="girl" />
+                <span
+                  >Это чат с администратором. Ты можешь с ним пообщаться по
+                  любому вопросу о нашем сервисе и узнать о ходе работы</span
+                >
+              </div>
               <div class="btn-container">
                 <button class="btn bg-pink">Заказать медиаплан</button>
                 <button class="btn bg-blue">Заказать отчет</button>
               </div>
-            </div>
               <div class="textarea__block">
                 <textarea
                   placeholder="Введите сообщение для администратора"
                   name=""
                   id="textarea"
                 >
-          
                 </textarea>
                 <div class="textarea__btn">
                   <div class="input-container">
@@ -127,14 +121,15 @@
                     />
                   </div>
                   <div class="btn-send">
-                  <button onclick="sendtext()" class="bg-pink icon-send" type="submit" id="btn-send">
-                    <img
-                      src="images/svg/send.svg"
-                      alt="send"
-                    />
-                  </button>
-                  <span class="enter">Enter</span>
-                </div>
+                    <button
+                      class="bg-pink icon-send"
+                      type="submit"
+                      id="btn-send"
+                    >
+                      <img src="images/svg/send.svg" alt="send" />
+                    </button>
+                    <span class="enter">Enter</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -144,30 +139,34 @@
 
       <footer class="page-footer">
         <div class="container footer-container">
-       
-          
-        
-        <nav class="footer__menu">
-          <img src="images/svg/pinkchicken2.svg" alt="logo">
-          <a href="#"><span>Политика конфиденциальности</span></a>
-          <a class="footer__items" href="mailto:pinkchicken@adaurum.ru"><img src="/images/svg/sms-tracking.svg" alt="tracking">pinkchicken@adaurum.ru</a>
-          <div class="footer__items">
-          <img src="/images/svg/global.svg" alt="global">
-          <div>
-          <button class="lang-active">RU</button>
-          <button>EN</button>
-          <button>TUR</button>
+          <nav class="footer__menu">
+            <img src="images/svg/pinkchicken2.svg" alt="logo" />
+            <a href="#"><span>Политика конфиденциальности</span></a>
+            <a class="footer__items" href="mailto:pinkchicken@adaurum.ru"
+              ><img
+                src="/images/svg/sms-tracking.svg"
+                alt="tracking"
+              />pinkchicken@adaurum.ru</a
+            >
+            <div class="footer__items">
+              <img src="/images/svg/global.svg" alt="global" />
+              <div>
+                <button class="lang-active">RU</button>
+                <button>EN</button>
+                <button>TUR</button>
+              </div>
+            </div>
+            <div class="footer__items">
+              <a href="https://t.me/"
+                ><img src="images/svg/tg.svg" alt="tg"
+              /></a>
+              <a href="https://wa.me/"
+                ><img src="images/svg/whatup.svg" alt="whatup"
+              /></a>
+            </div>
+          </nav>
         </div>
-        </div>
-        <div class="footer__items">
-          <a href="https://t.me/"><img src="images/svg/tg.svg" alt="tg"></a>
-          <a href="https://wa.me/"><img src="images/svg/whatup.svg" alt="whatup"></a>
-        </div>
-        </nav>
-        
-      </div>
       </footer>
-
     </div>
     <script type="module" src="/main.js"></script>
   </body>

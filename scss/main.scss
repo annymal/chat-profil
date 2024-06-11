@@ -1,12 +1,18 @@
-@import 'reset';
-@import 'base';
-@import 'header';
-@import 'container';
-@import 'variables';
-@import 'icon';
-@import 'aside';
-@import 'section';
-@import 'btn';
-@import 'footer';
-@import 'circle';
-@import 'textarea';
+@import "reset";
+@import "base";
+@import "header";
+@import "container";
+@import "variables";
+@import "icon";
+@import "aside";
+@import "section";
+@import "btn";
+@import "footer";
+@import "circle";
+@import "textarea";
+
+.app {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}

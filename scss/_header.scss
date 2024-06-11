@@ -1,63 +1,65 @@
 .page-header {
-    padding: 26px 0;
-    background-color:rgba(245, 245, 245, 1);
+  padding: 30px 40px;
+  background-color: rgba(245, 245, 245, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header__logo {
+    margin-right: 10px;
+  }
+  .header__menu {
     display: flex;
-    justify-content: space-between;
-    .header__menu {
-        display: flex;
-    }
-    .header__ul {
-        display: flex;
-    }
-    .header__item {
-        margin-right: 26px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
-    .header__item-text {
-        font-weight: 600;
-        font-size: 18px;
-    }
+  }
+  .header__ul {
+    display: flex;
+  }
+  .header__item {
+    margin-right: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .header__item-text {
+    font-weight: 600;
+    font-size: 18px;
+  }
 }
 @media (max-width: 1000px) {
-    .page-header {
-        padding: 30px 40px;
-        .header__item {
-            margin-right: 20px;
-        }
-        .header__item-text {
-            font-size: 16px;
-            font-weight: 500;
-        }
-    }
+  .header__item {
+    margin-right: 20px;
+  }
+  .header__item-text {
+    font-size: 16px;
+    font-weight: 500;
+  }
 }
 
-
-@media (max-width: 500px) {
-    .header__item:nth-child(1) {
-        img {
-            display: none;
-        }
+@media (max-width: 768px) {
+  .header__item:nth-child(1) {
+    img {
+      display: none;
     }
-    .header__item:nth-child(2) {
-        img {
-            display: none;
-        }
+  }
+  .header__item:nth-child(2) {
+    img {
+      display: none;
     }
-    .page-header {
+  }
+  .page-header {
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    .header__menu {
+      justify-content: space-between;
+      .header__ul {
         flex-direction: column;
-        background-color: var(--secondary-color);
-        .header__ul {
-            flex-direction: column;
-            margin-top: 20px;
-            gap: 6px;
-        }
-        .header__item-text {
-            font-size: 14px;
-            font-weight: 500;
-        }
+        margin-top: 20px;
+        gap: 6px;
+      }
+      .header__item-text {
+        font-size: 14px;
+        font-weight: 500;
+      }
     }
-        
+  }
 }
