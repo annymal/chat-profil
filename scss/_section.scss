@@ -65,15 +65,27 @@
 
   .file-upload-label {
     cursor: pointer;
-    margin-right: 1rem;
   }
-
-  .file-upload-icon {
+  .file-upload-input,
+  .file-upload-input-2 {
+    display: flex;
+    width: 116px;
+  }
+  .file-upload-input::before {
+    margin-right: 10px;
+    cursor: pointer;
+    content: url(/images/svg/folder-add.svg);
     width: 24px;
     height: 24px;
   }
-
-  .file-upload-input {
+  .file-upload-input-2::before {
+    margin-right: 10px;
+    cursor: pointer;
+    content: url(/images/svg/gallery.svg);
+    width: 24px;
+    height: 24px;
+  }
+  input::-webkit-file-upload-button {
     display: none;
   }
   .message {
